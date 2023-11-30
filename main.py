@@ -18,6 +18,10 @@ else:
   else:
     print('chao ban')
 
+# ve flowchart sododongchay
+# pip install pyflowchart
+# .venv/bin/python -m pyflowchart main.py -o flowchart.html
+
 '''
 ghinho / takeaway
 True / False dung trong caudieukhien if else
