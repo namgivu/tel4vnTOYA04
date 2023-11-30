@@ -1,57 +1,26 @@
-from pathlib import Path
+'''
+gioitinh nam / nu 
+neu la nam, chao anh
+neu la nu, chao chi
+'''
+gioitinh = 'nam'
+# gioitinh = 'nu'
+# gioitinh = 'gay'
 
-print(__file__)
-print(Path(__file__).stem)
-print(Path(__file__).name)
-print(Path(__file__).parent)
+print( gioitinh == 'nam' )
+print( gioitinh == 'nu' )
 
-###
+if gioitinh == 'nam':
+  print('chao anh')
+else:
+  if gioitinh == 'nu':
+    print('chao chi')
+  else:
+    print('chao ban')
 
-print()
-
-from datetime import datetime
-print(datetime.now() )
-
-###
-
-print('hi Nam')
-print ('hi')
-print("hi phuong")
-print('hi huynh')
-print('ok ban')
-print('hi Kasumo2009 -Hieu')
-
-print('Mai Manh Cuong')
-print('''
-chao tat ca moi nguoi
-hello world
-chao ban huynh
-''')
-
-###
-
-print(1)
-print(22)
-
-print('a')
-print('abb')
-print('abb ccc')
-
-print("a")
-print("abb")
-print("abb ccc")
-
-print('''
-abb line1
-ccc line2
-''')
-
-print("""
-abb line1
-ccc line2
-""")
-
-print('abb'
-      'ccc'
-      'deefff'
-     )
+'''
+ghinho / takeaway
+True / False dung trong caudieukhien if else
+if True se chay lenh cua khoi if do'
+if False se boqua khoi lenh if do'
+'''
