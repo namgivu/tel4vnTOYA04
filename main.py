@@ -1,3 +1,14 @@
+from pathlib import Path
+
+print(__file__)
+print(Path(__file__).stem)
+print(Path(__file__).name)
+print(Path(__file__).parent)
+
+###
+
+print()
+
 from datetime import datetime
 print(datetime.now() )
 
