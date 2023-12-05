@@ -17,7 +17,6 @@ r=tong2so(1,   22)     ; print(r)  # 23
 r=tong2so(333, 4444)   ; print(r)  # 4777
 r=tong2so('333', 4444) ; print(r)  # 4777
 r=tong2so(333, '4444') ; print(r)  # 4777
-import sys; sys.exit()
 
 ###
 
@@ -32,12 +31,14 @@ r=tong3so(4444,
 
 def max2so(num1, num2):  # by Duy
   max = num1
-  if num1 <= num2:
+  if int(num1) <= int(num2):
     max = num2
   return max
 
 r=max2so(1,22)      ; print(r)  # 22
 r=max2so(4444, 333) ; print(r)  # 4444
+r=max2so(4444, '333') ; print(r)  # 4444
+import sys; sys.exit()
 
 ###
 
