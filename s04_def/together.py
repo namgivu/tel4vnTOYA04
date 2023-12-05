@@ -1,11 +1,13 @@
 def mu2(i):  # by Phuong
-  return 2**i
+  if i is None: i=0
+  return 2 ** int(i)
 
-r=mu2(0) ; print(r)  # 1 2^0
-r=mu2(1) ; print(r)  # 2 2^1
-r=mu2(2) ; print(r)  # 4 2^2
-r=mu2('3') ; print(r)  # 4 2^2
-
+r=mu2(0)    ; print(r)  # 1 2^0
+r=mu2(1)    ; print(r)  # 2 2^1
+r=mu2(2)    ; print(r)  # 4 2^2
+r=mu2('3')  ; print(r)  # 8 2^3
+r=mu2(None) ; print(r)  # 4 2^2  # TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+# r=mu2()  #TODO
 import sys; sys.exit()
 
 ###
@@ -31,13 +33,13 @@ def max2so(num1, num2):  # by Duy
   if num1 <= num2:
     max = num2
   return max
-  
+
 r=max2so(1,22)      ; print(r)  # 22
 r=max2so(4444, 333) ; print(r)  # 4444
 
 ###
 
-def min2so(a, b): # by Huynh kuzo 
+def min2so(a, b): # by Huynh kuzo
   min = a
   if a >= b:
     min = b
@@ -63,7 +65,7 @@ def min3so_2(a, b, c): # by Mai Cuong
   min = a
   if b < min:
     min = b
-    
+
   if c < min:
     min = c
   return min
