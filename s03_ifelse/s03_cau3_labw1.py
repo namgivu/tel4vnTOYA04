@@ -16,3 +16,9 @@ else:     print(0)
 
 if "": print(1)
 else:  print(0)
+
+if '': print(1)
+else:  print(0)
+
+if 'hello': print(1)
+else:       print(0)
