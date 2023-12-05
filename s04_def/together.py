@@ -30,6 +30,9 @@ r=tong3so(4444,
 ###
 
 def max2so(num1, num2):  # by Duy
+  if num1 is None: return None
+  if num2 is None: return None
+
   max = num1
   if int(num1) <= int(num2):
     max = num2
@@ -38,6 +41,7 @@ def max2so(num1, num2):  # by Duy
 r=max2so(1,22)      ; print(r)  # 22
 r=max2so(4444, 333) ; print(r)  # 4444
 r=max2so(4444, '333') ; print(r)  # 4444
+r=max2so(1, None) ; print(r)  # 4444
 import sys; sys.exit()
 
 ###
