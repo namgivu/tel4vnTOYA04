@@ -1,4 +1,4 @@
-# .venv/bin/python         -m pyflowchart main.py -o flowchart2.html
+# .venv/bin/python         -m pyflowchart main.py -o flowchart.html
 # .venv/Scripts/python.exe -m ...  # tren win
 
 gioitinh = 'nam'

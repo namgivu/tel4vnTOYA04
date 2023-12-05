@@ -1,3 +1,5 @@
+# .venv/bin/python -m pyflowchart main.py -o flowchart.html
+
 # i = 1
 i = 22
 

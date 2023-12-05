@@ -1,4 +1,4 @@
-# .venv/bin/python -m pyflowchart main.py -o ./pyflowchart/flowchart2.html
+# .venv/bin/python -m pyflowchart main.py -o ./pyflowchart/flowchart.html
 
 if False: print(1)
 else:     print(0)
