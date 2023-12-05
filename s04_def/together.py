@@ -8,14 +8,16 @@ r=mu2(2)    ; print(r)  # 4 2^2
 r=mu2('3')  ; print(r)  # 8 2^3
 r=mu2(None) ; print(r)  # 4 2^2  # TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
 # r=mu2()  #TODO
-import sys; sys.exit()
 
 ###
 
 def tong2so(a,b):  # by Hieu kasumo
-  return a+b
-r=tong2so(1,   22)   ; print(r)  # 23
-r=tong2so(333, 4444) ; print(r)  # 4777
+  return int(a) + int(b)
+r=tong2so(1,   22)     ; print(r)  # 23
+r=tong2so(333, 4444)   ; print(r)  # 4777
+r=tong2so('333', 4444) ; print(r)  # 4777
+r=tong2so(333, '4444') ; print(r)  # 4777
+import sys; sys.exit()
 
 ###
 
