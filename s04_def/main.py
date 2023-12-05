@@ -37,10 +37,12 @@ tan = 1000kg
          1kg = 1000g
 '''
 def convert_to_mb(gb):
-  # return 'todo'
-  return None
+  return gb * 1024
 
-kq = convert_to_mb(gb=2)
+print( convert_to_mb(1) )
+print( convert_to_mb(2) )
+print( convert_to_mb(gb=3) )
+mb=convert_to_mb(gb=4) ; print(mb)
 #endregion convert_to_mb(gb=2)
 
 debugend=''
