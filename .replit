@@ -1,4 +1,4 @@
-entrypoint = "s04_def/together.py"
+entrypoint = "s05_loop/together.py"
 
 modules = ["python-3.10:v18-20230807-322e88b"]
 
@@ -11,5 +11,5 @@ channel = "stable-23_05"
 language = "python3"
 
 [deployment]
-run = ["python3", "s04_def/together.py"]
+run = ["python3", "s05_loop/together.py"]
 deploymentTarget = "cloudrun"
