@@ -1,4 +1,4 @@
-entrypoint = "s06_labw1.py"
+entrypoint = "s08_labw1_c6.py"
 
 modules = ["python-3.10:v18-20230807-322e88b"]
 
@@ -11,5 +11,5 @@ channel = "stable-23_05"
 language = "python3"
 
 [deployment]
-run = ["python3", "s06_labw1.py"]
+run = ["python3", "s08_labw1_c6.py"]
 deploymentTarget = "cloudrun"
