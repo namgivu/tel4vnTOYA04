@@ -13,3 +13,8 @@ print('end for')
 #   i      start,end, step
 for i in range(1,9+1, 2): print(i)
 print('end for')
+
+###
+#   i  start=0 10=end
+for i in range(10): print(i)
+print('end for')
