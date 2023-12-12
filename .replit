@@ -1,4 +1,4 @@
-entrypoint = "s08_nameage_baitap_slidew1/together.py"
+entrypoint = "s11_labw1_2__guessnum/together.py"
 
 modules = ["python-3.10:v18-20230807-322e88b"]
 
@@ -11,5 +11,5 @@ channel = "stable-23_05"
 language = "python3"
 
 [deployment]
-run = ["python3", "s08_nameage_baitap_slidew1/together.py"]
+run = ["python3", "s11_labw1_2__guessnum/together.py"]
 deploymentTarget = "cloudrun"
