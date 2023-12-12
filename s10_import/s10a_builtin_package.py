@@ -26,8 +26,7 @@ print()
 #region demo random
 import random
 print( random.randint(0,1) )
-print( random.randrange(0,11, 2))  # same as randint() but can have :step param
-#                           , 2==step
+print( random.randrange(0,11, step=2))  # same as randint() but can have :step param
 
 l = [1,22,333]
 print( random.choice(l) )
