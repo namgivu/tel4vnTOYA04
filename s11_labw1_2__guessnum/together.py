@@ -8,7 +8,7 @@ e. If user guess no more than 5 tries, they win the game.
 
 n=1
 1 2 3 4 5 6 7 8 9 10
-     lt 5 gtwhi
+     lt 5 gt
 """
 
 # ref Huong @  a. Using random package to generate a number  # only write import
