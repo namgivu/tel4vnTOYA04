@@ -25,7 +25,8 @@ for i in range(1,n+1):
   t = int(t)
 
   g = tien_ve(t)
-  tongtien += g
+  tongtien    = tongtien + g
+  # tongtien +=            g
 
   print(f'{tien_ve(t)=} -> {tongtien=}')
   print()
