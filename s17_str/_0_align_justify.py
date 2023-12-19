@@ -1,18 +1,18 @@
 ### print ruler
-def print_ruler():
+def print_ruler(c='.'):
   for _ in range(4):
     for i in range(10): print(_,end='')
   print()
 
 
-  for _ in range(4): print( str(_).ljust(10,'.'),end='')
+  for _ in range(4): print( str(_).ljust(10,c),end='')
   print()
 
-  for _ in range(4): print( str(_).rjust(10,'.'),end='')
+  for _ in range(4): print( str(_).rjust(10,c),end='')
   print()
 
   for _ in range(4):
-    print( str(_).ljust(10-1,'.'),end='')
+    print( str(_).ljust(10-1,c),end='')
     print( str(_),                end='')
 
   print()
@@ -33,7 +33,7 @@ print(s.rjust(22,'.'),end='') ; print()
 
 ###
 print()
-print_ruler()
+print_ruler(c='-')
 
 print(f'{s}')
 
