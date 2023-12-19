@@ -15,6 +15,8 @@ for h in range(1, total_height + 1):
   # haft tree ontheright
   print('*'*h)
 
+print('*'.rjust(total_height+2) )
+
 '''
 1 *          .*              .     *
 2 **         .***            .    ***
