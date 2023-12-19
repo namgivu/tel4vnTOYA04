@@ -17,6 +17,7 @@ def printnoeltree(total_height=6):
     print('*'*h)
 
   print('*'.rjust(total_height+2) )
+  #TODO                       +2 bug here for height>=10
 
   '''
   1 *          .*              .     *
@@ -31,3 +32,4 @@ def printnoeltree(total_height=6):
 printnoeltree(total_height=3)
 printnoeltree(total_height=6)
 printnoeltree(total_height=9)
+printnoeltree(total_height=12)
