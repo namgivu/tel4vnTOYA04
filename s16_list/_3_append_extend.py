@@ -17,3 +17,13 @@ conclusion
 .append()   single item
 .extend()   multi item
 '''
+
+###
+
+l = [1,2,3,4,5,6]
+print(l)    ; l.append(7)      ; print(l)
+print(l)    ; l.append([7,8])  ; print(l)
+# print(l)  ; l.append( 7,8 )  ; print(l)  #ERROR TypeError: list.append() takes exactly one argument (2 given)
+print(l)    ; l.extend([7,8])  ; print(l)
+print(l)    ; l.extend([7])    ; print(l)
+# print(l)  ; l.extend( 7 )    ; print(l)  #ERROR TypeError: 'int' object is not iterable
