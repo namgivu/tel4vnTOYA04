@@ -1,4 +1,4 @@
-entrypoint = "s11_labw1_2__guessnum/together_evennum_guress.py"
+entrypoint = "s18_exc_week2_2.py"
 
 modules = ["python-3.10:v18-20230807-322e88b"]
 
@@ -11,5 +11,5 @@ channel = "stable-23_05"
 language = "python3"
 
 [deployment]
-run = ["python3", "s11_labw1_2__guessnum/together_evennum_guress.py"]
+run = ["python3", "s18_exc_week2_2.py"]
 deploymentTarget = "cloudrun"
