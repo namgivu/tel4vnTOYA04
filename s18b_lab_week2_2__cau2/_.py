@@ -52,7 +52,6 @@ def sol_split():
   print(r)
 
   '''
-  TODO Duy 
   [
     ['66.249.65.159', '404'], 
     ['172.25.65.3',   '200'], 
@@ -74,6 +73,14 @@ def sol_split():
     len(
       [ e for e in r  if e[1].startswith('4') or e[1].startswith('5') ]
       # e for e ....  if filter1              or filter2
+    )
+  )
+
+  print(
+    '2xx count: ',
+    len(
+      [ e for e in r  if e[1].startswith('2') ]
+      # e for e ....  if filter1
     )
   )
 
