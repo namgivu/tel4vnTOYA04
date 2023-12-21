@@ -10,3 +10,8 @@ f_path   =               SH /'myfile.txt'  # SH aka SCRIPT_HOME
 
 s = f_path.read_text()
 print(s)
+
+###
+
+s = Path(__file__).parent/'myfile.txt' .read_text()
+print(s)
