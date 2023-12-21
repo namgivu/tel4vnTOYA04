@@ -16,3 +16,37 @@ and print  out  this in formation:
 -Total of success (2xx) and failed (4xx, 5xx) requests
 -Output the client ip that has the most 4xx request
 """
+
+from pathlib import Path
+
+#region get SH
+print(__file__)
+THIS_FILE     = __file__
+
+THIS_FILE_DIR = Path(__file__).parent
+SH            = THIS_FILE_DIR
+
+SH = THIS_FILE_DIR = Path(__file__).parent  # SH aka SCRIPT_HOME
+print(SH)
+#endregion get SH
+
+logfile_p = SH/'sample.log'
+fc        = logfile_p.read_text()
+logline_list = fc.split('\n')
+
+#TODO split
+def sol_split():
+  for line in logline_list[:-4]:
+    print(line)
+    ip = line.split(' - - ')[0]
+
+    afterip = line.split(' - - ')[1]
+    errcode = afterip.split('"')[2].split(' ')[1]
+
+    print(f'{ip=:>} {errcode=:>}')
+    print()
+sol_split()
+
+#TODO regex
+
+debug=122
