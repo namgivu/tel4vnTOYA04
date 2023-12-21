@@ -9,6 +9,12 @@
 47.29.201.179 - - [21/Oct/2022:18:17:10 +0000] "GET /sample HTTP/1.1" 502 5316 "https://example.com" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36" "2.75"
 66.249.65.159 - - [23/Oct/2022:13:17:10 +0000] "GET /sample HTTP/1.1" 403 5316 "https://example.com" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36" "2.75"
 47.29.201.179 - - [23/Oct/2022:14:17:10 +0000] "GET /sample HTTP/1.1" 201 5316 "https://example.com" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36" "2.75"
+1.22.333.456 - - [23/Oct/2022:14:17:10 +0000] "GET /sample HTTP/1.1" 404 5316 "https://example.com" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36" "2.75"
+1.22.333.456 - - [23/Oct/2022:14:17:10 +0000] "GET /sample HTTP/1.1" 404 5316 "https://example.com" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36" "2.75"
+1.22.333.456 - - [23/Oct/2022:14:17:10 +0000] "GET /sample HTTP/1.1" 404 5316 "https://example.com" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36" "2.75"
+1.22.333.456 - - [23/Oct/2022:14:17:10 +0000] "GET /sample HTTP/1.1" 404 5316 "https://example.com" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36" "2.75"
+1.22.333.456 - - [23/Oct/2022:14:17:10 +0000] "GET /sample HTTP/1.1" 404 5316 "https://example.com" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36" "2.75"
+1.22.333.456 - - [23/Oct/2022:14:17:10 +0000] "GET /sample HTTP/1.1" 404 5316 "https://example.com" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36" "2.75"
 
 6 request suceess
 6 request failed

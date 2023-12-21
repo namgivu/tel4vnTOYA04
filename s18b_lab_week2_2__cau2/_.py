@@ -83,6 +83,62 @@ def sol_split():
       # e for e ....  if filter1
     )
   )
+  print(
+    '4xx max: ',
+    [ e for e in r  if e[1].startswith('4') ]
+  )
+  '''
+  [
+    ['66.249.65.159', '404'], 
+    ['66.249.65.159', '401'], 
+    ['66.249.65.159', '403'], 
+    ['66.249.65.159', '403'], 
+    ['1.22.333.456', '404'], ['1.22.333.456', '404'], ['1.22.333.456', '404'], ['1.22.333.456', '404'], ['1.22.333.456', '404'], ['1.22.333.456', '404']]
+  
+  d = {
+    '66.249.65.159' : [404, 401, 403, 403],
+    '1.22.333.456'  : [404,404,404,404,404,404],
+  }
+  
+  d2 = {
+    '66.249.65.159' : len([404, 401, 403, 403]),
+    '1.22.333.456'  : len([404,404,404,404,404,404]),
+    #               : lay max cot len()
+  }
+  '''
+  ip_4xx_list = [ e for e in r  if e[1].startswith('4') ]
+  d = {}
+  for ip_4xx in ip_4xx_list:
+    ip   = ip_4xx[0]
+    _4xx = ip_4xx[1]
+    # ip, _4xx = ip_4xx  #NOTE for starter++ level
+
+    if ip not in d: d[ip] = []
+    d[ip].append(_4xx)
+
+  d2 = {k:len(v) for k,v in d.items() }
+  print(d)
+  print(d2)
+
+  '''
+  d2
+  {'66.249.65.159': 4, '1.22.333.456': 6}
+  '''
+  def cach_volong():
+    max_v = -1
+    for k,v in d2.items():
+      if v > max_v: max_v = v
+    print(f'{max_v=}')
+
+  max_v = max(
+    [v for k,v in d2.items() ]
+  )
+  print(f'{max_v=}')
+
+  print('ip co 4xx nhieunhat')
+  for k,v in d2.items():
+    if v == max_v:
+      print(k)
 
 sol_split()
 #endregion split
