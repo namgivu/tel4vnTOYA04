@@ -7,6 +7,8 @@ Split the string to get
 ○ 2 parts of path ["course", "python-for-devops"]
 """
 
+# ref Phuong
+
 url = 'https://tel4vn.edu.vn/course/python-for-devops/'
 #   =        01             2      3        
 
