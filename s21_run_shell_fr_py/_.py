@@ -90,3 +90,7 @@ r=subprocess.run('ls -l | wc -l', capture_output=True, shell=True)
 print(r)
 r=subprocess.run('ls -l',         capture_output=True, shell=True)
 print(r)
+
+print()
+r=subprocess.run('ls -l; echo 122', capture_output=True, shell=True) ; print(r)
+#                      ; CAUTION this can be used as injection attack
