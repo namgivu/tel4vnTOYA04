@@ -9,6 +9,9 @@ subprocess.run(['ls', '-l'])
 print()
 subprocess.run(['ls'])
 
+
+### intro capture_output=True
+
 '''
 r = subprocess.run(['ls'])
 
@@ -41,3 +44,13 @@ print(f'''
 {r.stdout.decode()=:>}
 {r.stderr.decode()=:>}
 ''')
+
+### intro text=True
+
+r = subprocess.run(['ls', '-l'], capture_output=True, text=True)
+print(f'''
+{r.returncode=}
+{r.stdout=:>}
+{r.stderr=:>}
+''')  # will raise error > TypeError: unsupported format string passed to bytes.__format__
+
