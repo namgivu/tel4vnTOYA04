@@ -61,4 +61,11 @@ r = subprocess.run(['ls', '/some/notexists/file'], capture_output=True)
 print(r)
 
 # this will fail the running code if shellcmd fails
-r = subprocess.run(['ls', '/some/notexists/file'], capture_output=True, check=True)
+# r = subprocess.run(['ls', '/some/notexists/file'], capture_output=True, check=True)
+
+print()
+try:
+  r = subprocess.run(['ls', '/some/notexists/file'], capture_output=True, check=True)
+except:
+  print('--- ERROR occurred')
+  print(r)
