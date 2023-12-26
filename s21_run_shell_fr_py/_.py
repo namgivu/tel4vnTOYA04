@@ -69,3 +69,24 @@ try:
 except:
   print('--- ERROR occurred')
   print(r)
+
+
+### intro shell=True used w/ linux cmd pipe
+'''
+revisit linux cmd pipe
+
+ls -l
+ls -l | tail -n1
+ls -l | tail -n2
+ls -l | head -n2
+
+ls /koco
+ls /koco      | grep No
+ls /koco 2>&1 | grep No
+'''
+print()
+# r=subprocess.run('ls -l | wc -l', capture_output=True)  # error > FileNotFoundError: [Errno 2] No such file or directory: 'ls -l | wc -l'
+r=subprocess.run('ls -l | wc -l', capture_output=True, shell=True)
+print(r)
+r=subprocess.run('ls -l',         capture_output=True, shell=True)
+print(r)
