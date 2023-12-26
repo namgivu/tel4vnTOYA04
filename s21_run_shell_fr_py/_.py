@@ -33,3 +33,11 @@ r'''
 CompletedProcess(args=['cat', '/some/notexists/file'], returncode=1, stdout=b'', 
                                                                      stderr=b'cat: /some/notexists/file: No such file or directory\n')
 '''
+
+print()
+r = subprocess.run(['ls', '-l'], capture_output=True)
+print(f'''
+{r.returncode=}
+{r.stdout.decode()=:>}
+{r.stderr.decode()=:>}
+''')
