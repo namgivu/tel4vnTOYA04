@@ -19,4 +19,10 @@ Wear your merriest and get ready to celebrate! See you there!
 The [Company Name] Team
 """
 
+Name         = 'Staff Name 1'
+Company_Name = 'Tel4vn'
 
+#TODO use dict
+I = {
+
+}
