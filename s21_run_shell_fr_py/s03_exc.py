@@ -85,3 +85,11 @@ print()
 r = lines_d.get(mountedon)
 if r: print(f'Found data for {mountedon=:>}\n{r}')
 else: print(f'Not found data for {mountedon=:>}')
+
+''' demo dict > k in a_dict
+# output
+if mountedon in lines_d: 
+  print(f'Found data for {mountedon=:>}\n{lines_d[mountedon]}')
+else: 
+  print(f'Not found data for {mountedon=:>}')
+'''
