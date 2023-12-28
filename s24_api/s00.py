@@ -25,5 +25,5 @@ print()
 
 # requests.request(url='https://api.upcitemdb.com/prod/trial/lookup?upc=190199267961')  # error > TypeError: request() missing 1 required positional argument: 'method'
 r = requests.get(url='https://api.upcitemdb.com/prod/trial/lookup?upc=190199267961')  # error > TypeError: request() missing 1 required positional argument: 'method'
-j = r.json()
+j = r.json()  # shorthand for json.loads(r.text)
 print(j)
