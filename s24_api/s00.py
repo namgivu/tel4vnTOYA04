@@ -20,3 +20,8 @@ import json
 d = json.loads(res.text)
 print(d)
 print(json.dumps(d, indent=2)[:122] + '\n  ...\n}')
+
+print()
+
+# requests.request(url='https://api.upcitemdb.com/prod/trial/lookup?upc=190199267961')  # error > TypeError: request() missing 1 required positional argument: 'method'
+requests.get(url='https://api.upcitemdb.com/prod/trial/lookup?upc=190199267961')  # error > TypeError: request() missing 1 required positional argument: 'method'
