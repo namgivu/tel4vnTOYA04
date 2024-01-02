@@ -2,7 +2,8 @@
 # project-wise folder-wise
 python -m pip install --upgrade pip virtualenv
 python -m virtualenv venv
-./venv/Scripts/python.exe -m pip install requests
+./venv/bin/python         -m pip install requests python-dotenv
+./venv/Scripts/python.exe -m pip install requests python-dotenv
 
 
 # system-wise
