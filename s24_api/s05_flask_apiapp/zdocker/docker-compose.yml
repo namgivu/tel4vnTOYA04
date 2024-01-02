@@ -6,6 +6,7 @@ services:
     build:
       context:    ${build_context}
       dockerfile: ${build_dockerfile}
+    image: toya_flaskapiapp
     ports:
       - 40102:5000
     environment:
