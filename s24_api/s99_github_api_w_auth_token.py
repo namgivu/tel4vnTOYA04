@@ -33,6 +33,7 @@ d_list = [{'name': 'v20160726', 'zipball_url': 'https://api.github.com/repos/pye
 sort tags based on the commit's `committer_date` (approximation of creation date)
 ref    https://stackoverflow.com/a/19615235/248616
 ggbard https://g.co/bard/share/4c0777da725a
+       https://g.co/bard/share/088666651a32
 '''
 def get_tag_createdat(d_list):
   ''' get commit detail fr commit id/sha '''
