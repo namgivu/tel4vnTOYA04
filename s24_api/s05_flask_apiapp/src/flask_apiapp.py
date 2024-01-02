@@ -4,7 +4,7 @@ python -m pip install --upgrade pip virtualenv
 python -m virtualenv venv
 
 ./venv/bin/python -m pip freeze
-./venv/bin/python -m pip install flask requests
+./venv/bin/python -m pip install flask requests pytest
 ./venv/bin/python -m pip freeze
 # win /Scripts/python.exe
 """
@@ -16,7 +16,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def         index():
-  return json.dumps({}, default=str)
+  return {}
 
 if __name__ == '__main__':
   #  .run                        host to run as dockercontainer lateron
