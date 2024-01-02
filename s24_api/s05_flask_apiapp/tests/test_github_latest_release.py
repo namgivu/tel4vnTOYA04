@@ -10,4 +10,4 @@ def apiapp():
 def test(apiapp):
   res = apiapp.get('/github_latest_release')
   assert res.status_code == 200
-  assert res.json == {}
+  assert 'latest_release' in res.json
