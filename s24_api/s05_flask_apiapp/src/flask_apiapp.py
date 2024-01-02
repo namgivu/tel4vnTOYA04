@@ -18,6 +18,12 @@ app = Flask(__name__)
 def         index():
   return {}
 
+
+@app.route('/github_latest_release')
+def          github_latest_release():
+  return {}
+
+
 if __name__ == '__main__':
   #  .run                        host to run as dockercontainer lateron
   app.run(debug=True, port=5000, host='0.0.0.0')
