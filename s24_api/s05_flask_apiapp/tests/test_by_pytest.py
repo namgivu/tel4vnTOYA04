@@ -7,7 +7,7 @@ def apiapp():
   with app.test_client() as apiapp:
     yield apiapp
 
-def test_hello_world(apiapp):
+def test(apiapp):
   res = apiapp.get('/')
   assert res.status_code == 200
   assert res.json == {}
