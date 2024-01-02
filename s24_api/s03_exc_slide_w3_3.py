@@ -22,7 +22,7 @@ def get_latest_tag__by_github_api():
   while True:
     pagination = 'page=2'
     url        = f'https://api.github.com/repos/{owner_repo}/tags?{pagination}'
-    '''pagination  https://api.github.com/repositories/5625464/tags?page=2'''
+    '''eg          https://api.github.com/repositories/5625464/tags?page=2'''
 
     res = requests.request(method='GET', url=url)
     d   = res.json()
@@ -31,8 +31,9 @@ def get_latest_tag__by_github_api():
 
     print(len(d_list))
 
-    next_link = res.links.get('next', {}).get('url')
+    next_link = res.links.get('next', {})
     if not next_link: break
+    else:             url = next_link.get('url')
 
 
   print(d_list)
