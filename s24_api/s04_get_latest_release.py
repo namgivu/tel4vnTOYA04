@@ -10,7 +10,7 @@ import requests
 from dotenv import load_dotenv ; load_dotenv() ;   access_token = os.environ.get('access_token')
 
 owner_repo = 'pyenv/pyenv'
-headers    = {'Authorization': f'token {access_token}'}
+headers    = {'Authorization': f'token {access_token}'}  #NOTE musthave auth in header or we get rate limitted request
 url        = f'https://api.github.com/repos/{owner_repo}/releases/latest'
 
 res = requests.request('GET', url, headers=headers)
