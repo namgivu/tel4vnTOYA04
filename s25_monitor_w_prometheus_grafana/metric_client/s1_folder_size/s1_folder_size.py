@@ -32,14 +32,24 @@ if __name__ == '__main__':
   )
   while True:
     ##region get foldersize as new metric plot and print to :8080 stream
-    path  = '/var/lib/docker'
+    path = '/var/lib/docker'
 
     # prepare prometheusclient plot obj
-    new_metric_plot  = metric_define_obj.labels(path)
+    new_metric_plot = metric_define_obj.labels(path)
 
     # print(sz)  # we want this print to print to :prometheus scrapejob --> print into :8080 stream --> need new prometheusclient plot obj aka :new_metric_plot
     sz = get_folder_size(path)
     new_metric_plot.set(sz)
+
+    #region 2nd line of same metric
+    '''view sample 
+    1line metric_1line.gif
+    3line metric_3line.png
+    '''
+    path2 = '/var/cache'
+    new_metric_plot2 = metric_define_obj.labels(path2)
+    new_metric_plot2.set( get_folder_size(path2) )
+    #endregion 2nd line of same metric
 
     ##endregion get foldersize as new metric plot and print to :8080 stream
 
