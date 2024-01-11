@@ -10,15 +10,37 @@ DONE get foldersize fr forlder_path  ref https://stackoverflow.com/a/25574638
 DONE send foldersize plot to prometheus --> later have grafana draw it
 """
 import subprocess
-from prometheus_client import start_http_server
+#
+from prometheus_client import start_http_server, Gauge
+import time
 
 
 def get_folder_size(path):
   """disk usage in human readable format (e.g. '2,1GB') ref https://stackoverflow.com/a/25574638"""
-  return subprocess.check_output(['du','-sh', path]).split()[0].decode('utf-8')
+  # return subprocess.check_output(['du','-sh', path]).split()[0].decode('utf-8')
+  return   subprocess.check_output(['du','-s',  path]).split()[0].decode('utf-8')
 
 if __name__ == '__main__':
   # p='/var/lib/docker' ; print( f'{get_folder_size(p)} {p}' )
   # p='/var/cache'      ; print( f'{get_folder_size(p)} {p}' )
 
   start_http_server(8080)  # start a prometheus metricclient; it's a httpserver app; aka 'prometheus metric-client httpserver' app
+  metric_define_obj = Gauge(
+    name          = 'folder_size',
+    documentation = 'toya demo folder_size',
+    labelnames    = [ 'path' ],
+  )
+  while True:
+    ##region get foldersize as new metric plot and print to :8080 stream
+    path  = '/var/lib/docker'
+
+    # prepare prometheusclient plot obj
+    new_metric_plot  = metric_define_obj.labels(path)
+
+    # print(sz)  # we want this print to print to :prometheus scrapejob --> print into :8080 stream --> need new prometheusclient plot obj aka :new_metric_plot
+    sz = get_folder_size(path)
+    new_metric_plot.set(sz)
+
+    ##endregion get foldersize as new metric plot and print to :8080 stream
+
+    time.sleep(3)
