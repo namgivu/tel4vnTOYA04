@@ -34,8 +34,8 @@ services:
     ports:
       - '9090:9090'
     ## Only need below line for linux
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
+#    extra_hosts:
+#      - "host.docker.internal:host-gateway"
 
   grafana:
     image: grafana/grafana:8.2.0
@@ -51,6 +51,6 @@ services:
     ports:
       - '3000:3000'
     ## Only need below line for linux
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
+#    extra_hosts:
+#      - "host.docker.internal:host-gateway"
 
